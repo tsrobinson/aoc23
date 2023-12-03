@@ -49,4 +49,5 @@ for inpt in input_data:
         i +=1
     cal_vals_p2.append(int(l_s + r_s))
 
+# solution
 sum(cal_vals_p2)
