@@ -173,3 +173,22 @@ for y in range(len(map)):
 
 # solution
 sum([map3[y][x] == '.' for y in range(len(map)) for x in range(len(map[0]))])
+
+plot_map = []
+for y in range(len(map2)):
+    row_tmp = []
+    for x in range(len(map2[0])):
+        row_tmp.append(1 if map2[y,x] == "#" else 0)
+    plot_map.append(row_tmp)
+
+# BONUS: SAVE MAP IMAGE
+import matplotlib.pyplot as plt 
+fig = plt.figure(figsize=(10,10), dpi=300)
+plt.gca().set_axis_off()
+plt.subplots_adjust(top = 1, bottom = 0, right = 1, left = 0, 
+            hspace = 0, wspace = 0)
+plt.margins(0,0)
+plt.gca().xaxis.set_major_locator(plt.NullLocator())
+plt.gca().yaxis.set_major_locator(plt.NullLocator())
+plt.imshow(plot_map,cmap="binary")
+plt.savefig('../day10_pipe.pdf')
