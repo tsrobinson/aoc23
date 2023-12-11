@@ -2,8 +2,8 @@
 
 My attempts at the AoC 2023.
 
-<img src="day10_pipe.pdf" alt="day 10 pipework map" width="500"/>
-
+<img src="day10_pipe.png" alt="day 10 pipework map" width="300"/>
+    
 ## Progress/reflections
 
 - Day 1: pleased I worked out that you can iterate once and check both ends, but level of nesting is a bit gross.
