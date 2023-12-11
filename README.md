@@ -3,7 +3,7 @@
 My attempts at the AoC 2023.
 
 <img src="day10_pipe.png" alt="day 10 pipework map" width="300"/>
-    
+
 ## Progress/reflections
 
 - Day 1: pleased I worked out that you can iterate once and check both ends, but level of nesting is a bit gross.
@@ -15,4 +15,5 @@ My attempts at the AoC 2023.
 - Day 7: fun part 1, using a merge sort (adapted using custom comparison function); not attempted part 2.
 - Day 8: part 1 very easy, but used itertools.cycle to create circular list. Part 2 I had the brute-force approach but would have taken hours. Not sure why the LCM works here, but it does...
 - Day 9: not sure it's the most efficient of code, but works pretty well -- part 2 was super easy change (though, intuitively, the position argument of .insert() should be the second, and not the first, argument...)
-- Day 10: part 1 pretty easy -- could have sent two pointers opposite ways, but not sure this is more efficient than simply tracing route and dividing length by two. Wouldn't have been able to attempt part 2 without considerable help from existing solutions: learned the flood-fill algorithm (both recursive and non-recursive versions) as a result, and some basic "resolution scaling".
+- Day 10: part 1 pretty easy -- could have sent two pointers opposite ways, but not sure this is more efficient than simply tracing route and dividing length by two. Wouldn't have been able to attempt part 2 without considerable help from existing solutions: learned the flood-fill algorithm (both recursive and non-recursive versions) as a result, and some basic "resolution scaling"
+- Day 11: part 1 was straightforward (did the puzzle intentionally build on yesterday's resolution scaling?) but my solution was verbose and iterated through the map several times. In doing part 2 I noticed I could fold in part 1 as well, which led to far less verbose code (though could still be way more efficient I suspect)
