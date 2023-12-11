@@ -2,7 +2,9 @@
 
 My attempts at the AoC 2023.
 
-<img src="day10_pipe.png" alt="day 10 pipework map" width="300"/>
+<p align="center">
+<img src="day10_pipe.png" alt="day 10 pipework map" width="200"/>
+</p>
 
 ## Progress/reflections
 
