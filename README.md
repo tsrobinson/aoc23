@@ -1,8 +1,8 @@
 # Advent of Code 2023
 
-My attempts at the AoC 2023.
+[Advent of Code](https://adventofcode.com/)
 
-<img src="day10_pipe.png" alt="day 10 pipework map" width="250" align="right"/>
+<img src="day10_pipe.png" alt="day 10 pipework map" width="275" align="right"/>
 
 ## Progress/reflections
 
