@@ -1,10 +1,10 @@
 import re
 
-init_strs = open("input.txt").readlines()[0].split(",")
+init_strs = open('input.txt').readlines()[0].split(',')
 
 def HASH(step):
     cv = 0
-    step = re.sub('\n','',step)
+    step.rstrip('\n')
     for c in step:
         cv += ord(c)
         cv *= 17
@@ -29,7 +29,7 @@ def HASHMAP(step):
         boxes[box][label] = int(lens)
         
 for step in init_strs:
-    HASHMAP(step.rstrip("\n"))
+    HASHMAP(step.rstrip('\n'))
     
 # solution
 sum([(1+i)*(1+p)*lens for i, (_, lenses) in enumerate(boxes.items()) for p, (_, lens) in enumerate(lenses.items())])
