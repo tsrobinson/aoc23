@@ -45,12 +45,14 @@ def part_2(p):
         p = spin(p)
         cycle += 1
     
+    print(cycle) 
+    
     chkpt = SPIN_MEMO[''.join(p.flatten())]
     cycle_len = max(SPIN_MEMO.values()) + 1 - chkpt
     
     for _ in range((1_000_000_000 - chkpt)%cycle_len):
         p = spin(p)
-        
+    
     return load(p)
         
 part_2(platform)
