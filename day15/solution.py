@@ -22,10 +22,10 @@ boxes = {i:{} for i in range(256)}
 def HASHMAP(step):
     label, lens = re.split('[=-]',step)
     box = HASH(label)
-    if lens == '': # <- 
+    if lens == '': # <- operator == '-'
         if label in boxes[box].keys():
             boxes[box].pop(label)
-    else:
+    else: # <- operator == '='
         boxes[box][label] = int(lens)
         
 for step in init_strs:
