@@ -21,3 +21,8 @@
 - Day 13: catching up a day late, only intended to do part 1: simple using numpy array indexing. Then realised for part 2 you can simply ask whether, for any potential reflection (as part 1), the configuration across comparison rows/cols differs by at most 1 character. One nice strategy I've learned from previous days is not to solve the problem literally--i.e. here by implementing character switching--but to check whether a solution *can* be made
 - Day 14: ooft -- that was fun! I had in mind while doing Part 1 that Part 2 would likely want a generalisation for tilting in any compass direction. Realised I didn't need a more general tilt function, but could instead just rotate the matrix itself and tilt North! 1 billion brute spins was also impossible, so I figured there must be some shorter number of spins before the pattern starts cycling. I implemented a hashmap for the (flattened) matrix, then just counted the extra number of spins needed. Still takes 16 seconds to run, and I'm sure others have much more efficient solutions
 - Day 15: an easy day! The 109-character list comprehension in part 2 is a gross joke on my part, just to prove I can do it rather than an instance of efficient coding (though it runs pretty quick...)
+
+*At this point, other commitments came calling... (not attempting part 2's for time being)*
+
+- Day 16: a hideous solution, that should be way simpler. Couldn't get test case to run due to recursion limits, so implemented a hashmap (as per day 12). Even that wouldn't work on the full input data, so also increased recursion limit. Fast, but messy...
+- Day 17: 
