@@ -25,4 +25,4 @@
 *At this point, other commitments came calling... (not attempting part 2's for time being)*
 
 - Day 16: a hideous solution, that should be way simpler. Couldn't get test case to run due to recursion limits, so implemented a hashmap (as per day 12). Even that wouldn't work on the full input data, so also increased recursion limit. Fast, but messy...
-- Day 17: 
+- Day 17: well... I almost quit on this one multiple times! Had to dredge up decision maths to find Dijkstra's algorithm, then try as I might I couldn't get it to work. Most helpful comment on subreddit was that we might want to keep in the heap a 'distance' which is longer but comes from a different direction (as we may be able to progress further with this route given the movement constraints).  learned about the heapq module, and also about defaultdicts (which will be no end of help, more generally!) Absolutely no chance I'm touching Part 2 this year...Finally, massive kudos to @janek37 for their solution, from which I learned loads.
